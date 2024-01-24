@@ -2,10 +2,10 @@
 
 // 1 Вивод парних чисел (for)
 
-// let value = +prompt("Введить числове значення, бiлше нiж 2");
+// let value = prompt("Введить числове значення, бiлше нiж 2");
 
 
-// if (isNaN(value) === true) {
+// if (isNaN(value)) {
 //     alert("Значення не є числом");
 
 // } 
@@ -23,15 +23,15 @@
 
 // // Вивод парних чисел (while)
 
-// let value = +prompt("Введить числове значення, бiлше нiж 2");
+// let value = prompt("Введить числове значення, бiлше нiж 2");
 
 
-// if (isNaN(value) === true) {
+// if (isNaN(value)) {
 //     alert("Значення не є числом");
 
 // } 
 // else if (value < 2) {
-//     alert("Значення менше нiж 3");
+//     alert("Значення менше нiж 2");
 
 // }
 // else {
@@ -47,7 +47,7 @@
 
 // for (let i = 1; i <=100; i++) {
 
-//     if (i % 3 === 0 && i % 5 ===0){
+//     if (i % 15 === 0){
 //         console.log("FizzBuzz");
 //     }
 //     else if (i % 3 === 0){
@@ -65,21 +65,15 @@
 // 3 Додаткова задача
 
 
-// let string = '42559125';
+let string = '42559125';
 
-// let result = "";
+let result = "";
 
+for (let i = 0; i < string.length; i ++){
+    result = (string[i] < 5) ? result +"0" : result +"1";
+}
 
-// for (let i = 0; i < string.length; i ++) {
-
-//     if (string[i] < 5){
-//         result += "0" 
-//     } else{
-//         result += "1"
-//     }
-// };
-
-// console.log(result);
+console.log(result);
 
 
 
